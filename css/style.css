@@ -25,6 +25,10 @@ body {
   line-height: 19px;
 }
 
+.current-floor {
+  opacity: 1 !important;
+}
+
 .header {
   padding: 9px 0;
   background: #635854;
