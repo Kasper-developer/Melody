@@ -11,6 +11,7 @@ $(document).ready(function () {
 		floorPath.removeClass('current-floor'); // удаляем активный класс этажей
 		currentFloor = $(this).attr("data-floor"); // получаем значение текущего этажа
 		counter.text(currentFloor); // записываем значение этажа в счетчик
+		$(`[data-floor=${currentFloor}]`).toggleClass('current-floor');  // подсвечиваем текущий этаж
 	});
 
 	counterUp.on('click', function () { // Отслеживаем клик по кнопке вверх
